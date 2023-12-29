@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>react test 3</title>
+</head>
+<body>
+    <pre>
+        1.What is hook? Write one example.   ?
+        Hooks are a new addition in React 16.8. They let you use state and
+         other React features without writing a class. This new function 
+         useState is the first “Hook” we'll 
+        learn about, 
+
+         example:
+         import React,{useState} from 'react';
+         export hook=()=>{
+            const [name,setName]=useState("sanjeev")
+            return(
+                < div> name </ div>
+            )
+         }
+
+         2.What is props ?    
+         In ReactJS, the props are a type of object where
+          the value of attributes of a tag is stored. The
+           word “props” implies “properties”, and its 
+           working functionality is quite similar to HTML attributes.
+            Basically, these props components are read-only components.19
+
+        3.What is state?
+        What Is 'State' in ReactJS? The state is a built-in 
+        React object that is used to contain data or information 
+        about the component. A component's state can change over time;
+         whenever it changes, the component re-renders.
+
+         4.Write one example of state update? 
+         example:
+         import React,{useState} from 'react';
+         export hook=()=>{
+            const [name,setName]=useState("sanjeev")
+            return(
+                < div> {setName('chandru')} </ div>
+            )
+         }
+
+         5.Difference between function and class component.  ?
+
+         function:
+         A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).
+
+         There is no render method used in functional components.
+
+         Functional components run from top to bottom and once the function is returned it can’t be kept alive.
+
+         Constructors are not used.
+
+         class:
+         A class component requires you to extend from React. Component and create a render function that returns a React element.
+         It must have the render() method returning JSX (which is syntactically similar to HTML)
+         The class component is instantiated and different life cycle method is kept alive and is run and invoked depending on the phase of the class component.
+         Constructor is used as it needs to store state. 
+
+    </pre>
+    <script src="main.js"></script>
+</body>
+</html>
